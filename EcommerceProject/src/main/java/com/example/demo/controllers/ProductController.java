@@ -1,6 +1,7 @@
 package com.example.demo.controllers;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -25,6 +26,11 @@ public class ProductController {
 	@GetMapping("/{id}/products")
 	public List<Product> findProductByCategory(@PathVariable int id){
 		return productService.findByCategoryId(id);
+	}
+	
+	@GetMapping("/{id}/productDetail")
+	public Optional<Product> findProductById(@PathVariable int id){
+		return productService.findById(id);
 	}
 	
 	@PostMapping("/addProduct")

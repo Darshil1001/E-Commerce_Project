@@ -1,6 +1,7 @@
 package com.example.demo.services;
 
 import java.util.List;
+import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -16,6 +17,10 @@ public class ProductService {
 	
 	public List<Product> findByCategoryId(int id){
 		return productRepository.findByCategoryId(id);
+	}
+	
+	public Optional<Product> findById(int id){
+		return productRepository.findById(id);
 	}
 	
 	public Product addProduct(Product product) {
