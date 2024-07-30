@@ -1,8 +1,10 @@
 // src/app/product-list/product-list.component.ts
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ProductService } from './product.service';
 import { Product } from '../product';
+import { ShoppingCartService } from '../shopping-cart/shopping-cart.service';
+import { CartItem } from '../cart-item';
 
 @Component({
   selector: 'app-product-list',
@@ -11,9 +13,10 @@ import { Product } from '../product';
 })
 export class ProductListComponent implements OnInit {
   products: Product[] = [];
+  product: Product | undefined;
   categoryId: number | undefined;
 
-  constructor(private route: ActivatedRoute, private productService: ProductService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private productService: ProductService, private shoppingCartService: ShoppingCartService) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -22,5 +25,11 @@ export class ProductListComponent implements OnInit {
         this.products = data;
       });
     });
+  }
+
+ 
+  addToCart(product: Product): void {
+    this.shoppingCartService.addToCart(product);
+    this.router.navigate(['/cart']);
   }
 }
