@@ -11,8 +11,7 @@
 **Database**: PostgreSQL
 
 ### Database Schema Design
-
-![Database Schema](https://github.com/user-attachments/assets/9318677a-5911-4318-83fd-1518a00171b5)
+![Database Schema](https://github.com/user-attachments/assets/5df5daba-0612-4daa-8d60-3fa6af58bbc9)
 
 ### GitHub Link
 https://github.com/Darshil1001/E-Commerce_Project
