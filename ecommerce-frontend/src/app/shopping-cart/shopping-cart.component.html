@@ -1,11 +1,9 @@
 <div class="container mt-4">
   <h1 class="text-center">Shopping Cart</h1>
-  
-  <div id="empty-cart-alert" class="alert alert-info" style="display: none;">
-    Your cart is empty.
-  </div>
-  
   <div id="cart-items-container"></div>
-  
-  <button id="clear-cart-button" class="btn btn-warning" style="display: none;" (click)="clearCart()">Clear Cart</button>
+  <div id="empty-cart-alert" class="alert alert-info" style="display: none;">Your cart is empty.</div>
+  <div class="d-flex justify-content-between align-items-center mt-3">
+    <button class="btn btn-warning" id="clear-cart-button">Clear Cart</button>
+    <button class="btn btn-primary" id="checkout-button">Proceed to Checkout</button>
+  </div>
 </div>

@@ -55,12 +55,6 @@ export class ShoppingCartService {
       const storedCart = sessionStorage.getItem(this.STORAGE_KEY);
       if (storedCart) {
         this.cartItems = JSON.parse(storedCart);
-        this.cartItems.forEach(item => {
-          const storedQuantity = sessionStorage.getItem(`${this.STORAGE_KEY}_${item.id}`);
-          if (storedQuantity) {
-            item.quantity = parseInt(storedQuantity, 10);
-          }
-        });
         this.cartItemsSubject.next(this.cartItems);
       }
     }
