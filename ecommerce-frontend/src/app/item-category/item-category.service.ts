@@ -14,4 +14,21 @@ export class ItemCategoryService {
   getAllCategories(): Observable<Category[]> {
     return this.http.get<Category[]>(this.apiUrl);
   }
+
+  createCategory(category: Category) {
+    return this.http.post(this.apiUrl+"/addCategory", category);
+  }
+
+  getCategory(id: number) {
+    return this.http.get(`${this.apiUrl}/${id}`);
+  }
+
+  updateCategory(category: Category) {
+    return this.http.put(`${this.apiUrl}/${category.id}`, category);
+  }
+
+  deleteCategory(id: number) {
+    return this.http.delete(`${this.apiUrl}/${id}`);
+  }
+  
 }

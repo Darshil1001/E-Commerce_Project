@@ -1,6 +1,6 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ItemCategoryService } from './item-category/item-category.service';
+import { ItemCategoryService } from '../item-category/item-category.service';
 
 describe('ItemCategoryService', () => {
   let service: ItemCategoryService;

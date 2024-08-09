@@ -1,0 +1,138 @@
+<div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar Menu -->
+      <nav id="sidebar" class="col-md-3 col-lg-2 d-md-block bg-light sidebar">
+        <div class="position-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <button id="category-btn" class="btn btn-primary btn-block">Manage Categories</button>
+            </li>
+            <li class="nav-item mt-3">
+              <button id="item-btn" class="btn btn-secondary btn-block">Manage Items</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+  
+      <!-- Main Content Area -->
+      <main role="main" class="col-md-9 ms-sm-auto col-lg-10 px-4">
+        <h1 class="text-center">Admin Dashboard</h1>
+  
+        <!-- Content for Categories -->
+        <div id="category-section" class="section">
+          <h2>Category Operations</h2>
+  
+          <!-- Create Category Form -->
+          <form id="create-category-form">
+            <div class="form-group">
+              <label for="category-name">Category Name</label>
+              <input type="text" id="category-name" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Create Category</button>
+          </form>
+  
+          <!-- List Categories -->
+          <div id="category-list" class="mt-4">
+            <h3>List of Categories</h3>
+            <ul class="list-group">
+              <!-- Categories will be dynamically inserted here -->
+            </ul>
+          </div>
+  
+          <!-- Update Category Form -->
+          <form id="update-category-form" class="mt-4">
+            <div class="form-group">
+              <label for="update-category-id">Category ID</label>
+              <input type="number" id="update-category-id" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="update-category-name">New Category Name</label>
+              <input type="text" id="update-category-name" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Update Category</button>
+          </form>
+  
+          <!-- Delete Category Form -->
+          <form id="delete-category-form" class="mt-4">
+            <div class="form-group">
+              <label for="delete-category-id">Category ID</label>
+              <input type="number" id="delete-category-id" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-danger mt-2">Delete Category</button>
+          </form>
+        </div>
+  
+        <!-- Content for Items -->
+        <div id="item-section" class="section">
+          <h2>Item Operations</h2>
+  
+          <!-- Create Item Form -->
+          <form id="create-item-form">
+            <div class="form-group">
+              <label for="item-name">Item Name</label>
+              <input type="text" id="item-name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="item-description">Item Description</label>
+              <input type="text" id="item-description" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="item-price">Item Price</label>
+              <input type="number" id="item-price" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="item-category">Category</label>
+              <select id="item-category" class="form-control" required>
+                <!-- Categories will be dynamically inserted here -->
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Create Item</button>
+          </form>
+  
+          <!-- List Items -->
+          <div id="item-list" class="mt-4">
+            <h3>List of Items</h3>
+            <ul class="list-group">
+              <!-- Items will be dynamically inserted here -->
+            </ul>
+          </div>
+  
+          <!-- Update Item Form -->
+          <form id="update-item-form" class="mt-4">
+            <div class="form-group">
+              <label for="update-item-id">Item ID</label>
+              <input type="number" id="update-item-id" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="update-item-name">New Item Name</label>
+              <input type="text" id="update-item-name" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="update-item-description">New Item Description</label>
+              <input type="text" id="update-item-description" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="update-item-price">New Item Price</label>
+              <input type="number" id="update-item-price" class="form-control" required>
+            </div>
+            <div class="form-group">
+              <label for="update-item-category">New Category</label>
+              <select id="update-item-category" class="form-control" required>
+                <!-- Categories will be dynamically inserted here -->
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary mt-2">Update Item</button>
+          </form>
+  
+          <!-- Delete Item Form -->
+          <form id="delete-item-form" class="mt-4">
+            <div class="form-group">
+              <label for="delete-item-id">Item ID</label>
+              <input type="number" id="delete-item-id" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-danger mt-2">Delete Item</button>
+          </form>
+        </div>
+      </main>
+    </div>
+  </div>
