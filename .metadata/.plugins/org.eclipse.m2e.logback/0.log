@@ -4766,3 +4766,79 @@ org.eclipse.core.runtime.CoreException: Could not resolve artifact jstl:jstl:jar
 2024-07-29 17:19:22,038 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
 2024-07-29 17:19:22,051 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
 2024-07-29 17:19:22,053 [Worker-105: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-07-29 20:03:46,160 [ModalContext] ERROR o.e.m.c.i.p.r.ProjectRegistryReader - Can't write workspace state
+java.io.FileNotFoundException: C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\.metadata\.plugins\org.eclipse.m2e.core\workspaceState.ser (The system cannot find the path specified)
+	at java.base/java.io.FileOutputStream.open0(Native Method)
+	at java.base/java.io.FileOutputStream.open(FileOutputStream.java:293)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:235)
+	at java.base/java.io.FileOutputStream.<init>(FileOutputStream.java:184)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.createObjectOutputStream(ProjectRegistryReader.java:127)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryReader.writeWorkspaceState(ProjectRegistryReader.java:116)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.writeWorkspaceState(ProjectRegistryManager.java:1043)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.saving(ProjectRegistryManager.java:1194)
+	at org.eclipse.core.internal.resources.SaveManager.executeLifecycle(SaveManager.java:452)
+	at org.eclipse.core.internal.resources.SaveManager$1.run(SaveManager.java:268)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.core.internal.resources.SaveManager.broadcastLifecycle(SaveManager.java:271)
+	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1225)
+	at org.eclipse.core.internal.resources.Workspace.save(Workspace.java:2489)
+	at org.eclipse.ui.internal.ide.application.IDEWorkbenchAdvisor.lambda$1(IDEWorkbenchAdvisor.java:553)
+	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:124)
+2024-07-31 11:47:11,440 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-07-31 11:56:53,198 [Worker-14: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:EcommerceProject:0.0.1-SNAPSHOT @ C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\pom.xml.
+2024-07-31 11:56:53,485 [Worker-1: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:EcommerceProject:0.0.1-SNAPSHOT @ C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\pom.xml.
+2024-07-31 11:56:55,236 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-31 11:56:55,260 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-31 11:56:55,266 [Worker-1: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-07-31 11:56:55,881 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-07-31 11:56:55,883 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-07-31 11:56:55,886 [Worker-10: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-07-31 11:56:56,746 [Worker-16: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:EcommerceProject:0.0.1-SNAPSHOT @ C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\pom.xml.
+2024-07-31 11:58:20,982 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2024-08-07 15:30:39,416 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-08-08 19:05:54,729 [Worker-4: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2024-08-08 19:21:30,637 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 19:21:30,655 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 19:21:30,672 [Worker-2: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 19:22:33,119 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 19:22:33,128 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 19:22:33,136 [Worker-11: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 21:12:48,190 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 21:12:48,210 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 21:12:48,218 [Worker-26: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 21:15:30,676 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 21:15:30,688 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 21:15:30,690 [Worker-27: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 21:15:49,148 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 21:15:49,157 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 21:15:49,162 [Worker-29: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 21:19:28,443 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 21:19:28,450 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 21:19:28,454 [Worker-32: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 21:19:38,907 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 21:19:38,911 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 21:19:38,913 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 21:19:58,394 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 21:19:58,399 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 21:19:58,402 [Worker-28: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 22:01:26,955 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 22:01:26,968 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 22:01:26,970 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 22:01:29,559 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 22:01:29,566 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 22:01:29,568 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 22:29:50,313 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 22:29:50,349 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 22:29:50,355 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 22:29:56,937 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 22:29:56,946 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 22:29:56,948 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 22:30:10,051 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 22:30:10,056 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 22:30:10,058 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 22:30:33,937 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 22:30:33,948 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 22:30:33,951 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
+2024-08-08 22:50:27,226 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2024-08-08 22:50:27,234 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2024-08-08 22:50:27,238 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - skip non existing resourceDirectory C:\Users\darsh\Documents\workspace-spring-tool-suite-4-4.22.1.RELEASE\EcommerceProject\src\test\resources
