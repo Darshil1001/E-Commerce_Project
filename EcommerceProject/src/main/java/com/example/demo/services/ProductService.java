@@ -15,6 +15,10 @@ public class ProductService {
 	@Autowired
 	private ProductRepository productRepository;
 	
+	public List<Product> findAllProducts(){
+		return productRepository.findAll();
+	}
+	
 	public List<Product> findByCategoryId(int id){
 		return productRepository.findByCategoryId(id);
 	}
@@ -26,6 +30,17 @@ public class ProductService {
 	public Product addProduct(Product product) {
 		return productRepository.save(product);
 	}
-	
 
+	public Product updateProduct(int id, Product product) {
+		if (productRepository.existsById(id)) {
+			product.setId(id);
+			return productRepository.save(product);
+		} else {
+			return null; // Or handle it as needed, e.g., throw an exception
+		}
+	}
+
+	public void deleteProduct(int id) {
+		productRepository.deleteById(id);
+	}
 }
