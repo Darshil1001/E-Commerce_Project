@@ -16,6 +16,9 @@
 ### GitHub Link
 https://github.com/Darshil1001/E-Commerce_Project
 
+### Youtube Demo Link
+https://youtu.be/GsgbU_ArOJw
+
 ### Test Cases
 1) Display a List of Categories on the Home Page
   - Navigate to the home page
